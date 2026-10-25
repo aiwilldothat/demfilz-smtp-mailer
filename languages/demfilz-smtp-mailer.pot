@@ -1,0 +1,1741 @@
+# Copyright (C) 2026 Demfilz
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Demfilz SMTP Mailer 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/demfilz-smtp-mailer\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-10T21:35:51+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: demfilz-smtp-mailer\n"
+
+#. Plugin Name of the plugin
+#: demfilz-smtp-mailer.php
+#: includes/class-dsmtp-privacy.php:139
+msgid "Demfilz SMTP Mailer"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: demfilz-smtp-mailer.php
+msgid "https://demfilz.com/smtp-mailer"
+msgstr ""
+
+#. Description of the plugin
+#: demfilz-smtp-mailer.php
+msgid "Send every WordPress email through a real mail service instead of the PHP mail function. Microsoft 365 and Outlook (modern OAuth or SMTP), Google Workspace and Gmail, any SMTP server, plus SendGrid, Mailgun, Brevo, Postmark and Resend, with an email log, bounce capture, a suppression list, retries, failure alerts and a domain records check."
+msgstr ""
+
+#. Author of the plugin
+#: demfilz-smtp-mailer.php
+msgid "Demfilz"
+msgstr ""
+
+#. Author URI of the plugin
+#: demfilz-smtp-mailer.php
+msgid "https://demfilz.com/"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:62
+#: admin/class-dsmtp-admin.php:63
+msgid "Mail"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:73
+#: admin/views/settings.php:32
+msgid "Mail settings"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:74
+#: demfilz-smtp-mailer.php:94
+msgid "Settings"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:82
+#: admin/class-dsmtp-admin.php:83
+#: admin/views/log.php:35
+#: admin/views/settings.php:160
+#: includes/class-dsmtp-privacy.php:36
+#: includes/class-dsmtp-privacy.php:51
+#: includes/class-dsmtp-privacy.php:74
+msgid "Email log"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:91
+#: admin/class-dsmtp-admin.php:92
+#: admin/views/suppression.php:39
+msgid "Suppression list"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:100
+#: admin/views/tools.php:26
+msgid "Mail tools"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:101
+msgid "Tools"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:137
+msgid "Delete every entry in the email log?"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:138
+msgid "Delete the selected entries?"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:139
+msgid "Create a new webhook secret? The current webhook addresses stop working until you update them at each service."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:140
+msgid "Copied"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:141
+#: admin/class-dsmtp-admin.php:864
+#: admin/views/settings.php:291
+msgid "Copy"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:165
+msgid "Email is failing on this site."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:168
+msgid "Open the email log"
+msgstr ""
+
+#. translators: %s: PHP class name of the other mail plugin.
+#: admin/class-dsmtp-admin.php:180
+#, php-format
+msgid "Another mail plugin is also taking over sending on this site (%s). Deactivate one of them, otherwise the settings here may be ignored."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:201
+msgid "Settings saved."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:202
+msgid "Settings imported. Check them over, then send a test email."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:203
+msgid "Settings imported, but the password could not be read. Enter it again below."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:204
+msgid "Disconnected."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:205
+msgid "Log entries deleted."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:206
+msgid "The email log is empty."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:207
+msgid "The message was sent again."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:208
+msgid "Address added to the suppression list."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:209
+msgid "Addresses removed from the suppression list. They can be emailed again."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:210
+msgid "New webhook secret created. Update the webhook address at every service that posts events here."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:211
+msgid "Settings saved. Reading bounce reports needs extra permission from the mailbox, so press Disconnect and then Connect again on the mailer."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:212
+msgid "That did not work. Check the details and try again."
+msgstr ""
+
+#. translators: 1: number of reports read, 2: number of bounces recorded.
+#: admin/class-dsmtp-admin.php:227
+#, php-format
+msgid "Checked the mailbox: %1$d new delivery reports, %2$d bounces recorded."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:250
+msgid "Connected. Send a test email to confirm delivery."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:259
+msgid "The sign in could not be verified. Start again from this page."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:260
+msgid "That account is not allowed to change these settings."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:261
+msgid "The sign in was cancelled or refused."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:262
+msgid "The mail provider did not return an authorisation code."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:263
+msgid "The tokens could not be collected."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:307
+msgid "You are not allowed to change these settings."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:860
+msgid "Redirect URI to register with the mail provider"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:870
+msgid "Application permissions do not need a sign in. Grant admin consent to the application in your directory, then send a test email."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:877
+msgid "Grant admin consent"
+msgstr ""
+
+#. translators: %s: mailbox address.
+#: admin/class-dsmtp-admin.php:895
+#, php-format
+msgid "Connected as %s"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:898
+msgid "Connected"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:916
+msgid "Disconnect"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:933
+msgid "Connect"
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:934
+msgid "Save the application details first."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:967
+msgid "Set in wp-config.php"
+msgstr ""
+
+#. translators: %s: PHP constant name.
+#: admin/class-dsmtp-admin.php:971
+#, php-format
+msgid "This value comes from the constant %s and cannot be changed here."
+msgstr ""
+
+#: admin/class-dsmtp-admin.php:1022
+msgid "Remove the stored value"
+msgstr ""
+
+#: admin/views/log-entry.php:16
+msgid "Log entry"
+msgstr ""
+
+#: admin/views/log-entry.php:18
+msgid "Back to the email log"
+msgstr ""
+
+#: admin/views/log-entry.php:21
+msgid "That entry no longer exists."
+msgstr ""
+
+#: admin/views/log-entry.php:26
+#: admin/views/log.php:122
+#: includes/class-dsmtp-privacy.php:78
+msgid "Date"
+msgstr ""
+
+#: admin/views/log-entry.php:30
+#: admin/views/log.php:126
+#: includes/class-dsmtp-privacy.php:94
+msgid "Status"
+msgstr ""
+
+#: admin/views/log-entry.php:35
+#: admin/views/log.php:70
+#: admin/views/log.php:158
+msgid "Delivered"
+msgstr ""
+
+#: admin/views/log-entry.php:37
+#: admin/views/log.php:72
+#: admin/views/log.php:160
+msgid "Waiting to retry"
+msgstr ""
+
+#: admin/views/log-entry.php:39
+#: admin/views/log.php:73
+#: admin/views/log.php:162
+#: admin/views/suppression.php:31
+msgid "Bounced"
+msgstr ""
+
+#: admin/views/log-entry.php:41
+#: admin/views/log.php:74
+#: admin/views/log.php:164
+msgid "Blocked"
+msgstr ""
+
+#: admin/views/log-entry.php:43
+#: admin/views/log.php:71
+#: admin/views/log.php:166
+msgid "Failed"
+msgstr ""
+
+#. translators: %s: date and time.
+#: admin/views/log-entry.php:51
+#, php-format
+msgid "Delivery confirmed by the provider at %s."
+msgstr ""
+
+#. translators: %d: number of attempts.
+#: admin/views/log-entry.php:60
+#, php-format
+msgid "Attempts: %d"
+msgstr ""
+
+#: admin/views/log-entry.php:68
+#: admin/views/settings.php:102
+msgid "Mailer"
+msgstr ""
+
+#: admin/views/log-entry.php:78
+#: includes/class-dsmtp-privacy.php:86
+msgid "From"
+msgstr ""
+
+#: admin/views/log-entry.php:82
+#: admin/views/log.php:123
+#: includes/class-dsmtp-privacy.php:90
+msgid "To"
+msgstr ""
+
+#: admin/views/log-entry.php:87
+msgid "Cc"
+msgstr ""
+
+#: admin/views/log-entry.php:93
+msgid "Bcc"
+msgstr ""
+
+#: admin/views/log-entry.php:98
+#: admin/views/log.php:124
+#: includes/class-dsmtp-privacy.php:82
+msgid "Subject"
+msgstr ""
+
+#: admin/views/log-entry.php:103
+msgid "Attachments"
+msgstr ""
+
+#: admin/views/log-entry.php:109
+#: admin/views/log.php:125
+msgid "Sent by"
+msgstr ""
+
+#: admin/views/log-entry.php:115
+msgid "Message id"
+msgstr ""
+
+#: admin/views/log-entry.php:121
+msgid "Reported problem"
+msgstr ""
+
+#: admin/views/log-entry.php:127
+msgid "Headers"
+msgstr ""
+
+#: admin/views/log-entry.php:135
+msgid "Message"
+msgstr ""
+
+#: admin/views/log-entry.php:144
+msgid "Send this message again"
+msgstr ""
+
+#: admin/views/log-entry.php:145
+msgid "Delete this entry"
+msgstr ""
+
+#: admin/views/log-entry.php:149
+msgid "This entry was recorded without the detail needed to send it again. Turn retries on to keep that detail in future."
+msgstr ""
+
+#: admin/views/log.php:39
+msgid "Logging is switched off, so nothing new is being recorded."
+msgstr ""
+
+#: admin/views/log.php:40
+msgid "Turn it on"
+msgstr ""
+
+#: admin/views/log.php:47
+msgid "Delivered in the last 7 days"
+msgstr ""
+
+#: admin/views/log.php:51
+msgid "Failed in the last 7 days"
+msgstr ""
+
+#: admin/views/log.php:55
+msgid "Bounced in the last 7 days"
+msgstr ""
+
+#: admin/views/log.php:59
+msgid "Entries matching this view"
+msgstr ""
+
+#: admin/views/log.php:66
+msgid "Search the log"
+msgstr ""
+
+#: admin/views/log.php:69
+msgid "Any status"
+msgstr ""
+
+#: admin/views/log.php:77
+msgid "Any mailer"
+msgstr ""
+
+#: admin/views/log.php:84
+#: admin/views/suppression.php:83
+msgid "Filter"
+msgstr ""
+
+#: admin/views/log.php:94
+msgid "Delete selected"
+msgstr ""
+
+#: admin/views/log.php:95
+msgid "Empty the log"
+msgstr ""
+
+#: admin/views/log.php:96
+#: admin/views/suppression.php:94
+msgid "Download CSV"
+msgstr ""
+
+#: admin/views/log.php:131
+msgid "Nothing here yet."
+msgstr ""
+
+#: admin/views/log.php:147
+msgid "(no subject)"
+msgstr ""
+
+#: admin/views/log.php:171
+msgid "Delivery confirmed by the provider"
+msgstr ""
+
+#: admin/views/settings.php:16
+msgid "Sending"
+msgstr ""
+
+#: admin/views/settings.php:17
+msgid "Log and alerts"
+msgstr ""
+
+#: admin/views/settings.php:18
+#: admin/views/settings.php:305
+msgid "Email controls"
+msgstr ""
+
+#: admin/views/settings.php:19
+#: admin/views/settings.php:329
+msgid "Advanced"
+msgstr ""
+
+#. translators: %s: mailer name.
+#: admin/views/settings.php:41
+#, php-format
+msgid "Sending through %s."
+msgstr ""
+
+#: admin/views/settings.php:46
+#: admin/views/tools.php:28
+msgid "Send a test email"
+msgstr ""
+
+#: admin/views/settings.php:50
+msgid "The plugin is network activated, so these settings apply to every site in the network."
+msgstr ""
+
+#: admin/views/settings.php:68
+#: admin/views/tools.php:240
+msgid "From address"
+msgstr ""
+
+#: admin/views/settings.php:72
+msgid "From email"
+msgstr ""
+
+#: admin/views/settings.php:75
+msgid "Use this address for every message, even when a plugin sets its own"
+msgstr ""
+
+#: admin/views/settings.php:76
+msgid "Use an address at your own domain. Free mailbox addresses are rejected or filed as spam by most inboxes."
+msgstr ""
+
+#: admin/views/settings.php:80
+msgid "From name"
+msgstr ""
+
+#: admin/views/settings.php:83
+msgid "Use this name for every message"
+msgstr ""
+
+#: admin/views/settings.php:87
+msgid "Reply to"
+msgstr ""
+
+#: admin/views/settings.php:90
+msgid "Optional. Used only when the message does not set its own reply to address."
+msgstr ""
+
+#: admin/views/settings.php:94
+msgid "Return path"
+msgstr ""
+
+#: admin/views/settings.php:96
+msgid "Send bounce messages to the from address"
+msgstr ""
+
+#: admin/views/settings.php:105
+msgid "The mailer is set in wp-config.php and cannot be changed here."
+msgstr ""
+
+#: admin/views/settings.php:126
+msgid "Connection"
+msgstr ""
+
+#: admin/views/settings.php:134
+msgid "Backup mailer"
+msgstr ""
+
+#: admin/views/settings.php:138
+msgid "If the first mailer fails"
+msgstr ""
+
+#: admin/views/settings.php:141
+msgid "Do not try again with another mailer"
+msgstr ""
+
+#: admin/views/settings.php:152
+msgid "The message is handed straight to the second mailer, so nothing is lost when the first one is down. Set the second mailer up first, and make sure it accepts the same from address."
+msgstr ""
+
+#: admin/views/settings.php:164
+msgid "Keep a log"
+msgstr ""
+
+#: admin/views/settings.php:166
+msgid "Record every message this site sends"
+msgstr ""
+
+#: admin/views/settings.php:170
+msgid "Store message bodies"
+msgstr ""
+
+#: admin/views/settings.php:172
+msgid "Also keep the content of each message"
+msgstr ""
+
+#: admin/views/settings.php:173
+msgid "Useful while you are testing. It also means password reset links and customer details sit in your database, so leave it off on a live site unless you need it."
+msgstr ""
+
+#: admin/views/settings.php:177
+msgid "Delete entries after"
+msgstr ""
+
+#: admin/views/settings.php:180
+msgid "days"
+msgstr ""
+
+#: admin/views/settings.php:181
+msgid "Zero keeps entries forever."
+msgstr ""
+
+#: admin/views/settings.php:187
+msgid "Retries"
+msgstr ""
+
+#: admin/views/settings.php:191
+msgid "Try again after a failure"
+msgstr ""
+
+#: admin/views/settings.php:193
+msgid "Queue failed messages and send them again in the background"
+msgstr ""
+
+#: admin/views/settings.php:197
+msgid "Attempts"
+msgstr ""
+
+#: admin/views/settings.php:200
+msgid "The wait doubles each time, starting at five minutes. Retries need WP Cron to be running."
+msgstr ""
+
+#: admin/views/settings.php:206
+msgid "Alerts"
+msgstr ""
+
+#: admin/views/settings.php:210
+msgid "Tell me when mail fails"
+msgstr ""
+
+#: admin/views/settings.php:212
+msgid "Send an alert when a message cannot be delivered"
+msgstr ""
+
+#: admin/views/settings.php:213
+msgid "At most one alert an hour. A failure notice always appears in the dashboard, whether alerts are on or not."
+msgstr ""
+
+#: admin/views/settings.php:217
+msgid "Alert email"
+msgstr ""
+
+#: admin/views/settings.php:220
+msgid "A mailbox on a different service is the safest choice, since the alert travels through the mailer that just failed."
+msgstr ""
+
+#: admin/views/settings.php:224
+msgid "Alert webhook"
+msgstr ""
+
+#: admin/views/settings.php:227
+msgid "The failure is posted as JSON, which suits a chat incoming webhook or your own endpoint."
+msgstr ""
+
+#: admin/views/settings.php:231
+msgid "Weekly summary"
+msgstr ""
+
+#: admin/views/settings.php:233
+msgid "Email a summary of the last seven days once a week"
+msgstr ""
+
+#: admin/views/settings.php:240
+msgid "Delivery feedback"
+msgstr ""
+
+#: admin/views/settings.php:241
+msgid "Find out what happened after the send. Bounces and spam complaints reported by your mailer are written back to the email log, and the addresses concerned go on the suppression list so they are never emailed again."
+msgstr ""
+
+#: admin/views/settings.php:245
+msgid "Suppression"
+msgstr ""
+
+#: admin/views/settings.php:247
+msgid "Stop emailing an address after a hard bounce"
+msgstr ""
+
+#: admin/views/settings.php:248
+msgid "Stop emailing an address after a spam complaint"
+msgstr ""
+
+#: admin/views/settings.php:249
+msgid "Repeatedly sending to dead or unwilling addresses is what gets a domain throttled. Manage the list under Mail, Suppression list."
+msgstr ""
+
+#: admin/views/settings.php:253
+msgid "Microsoft and Google mailboxes"
+msgstr ""
+
+#: admin/views/settings.php:255
+msgid "Read bounce reports from the connected mailbox every fifteen minutes"
+msgstr ""
+
+#: admin/views/settings.php:256
+msgid "Microsoft and Google do not post events, but every bounce comes back to the sending mailbox as a delivery report. This reads those reports, and nothing else. It needs read permission on the mailbox: Mail.Read for Microsoft (an application permission when using client credentials) or gmail.readonly for Google, so reconnect the mailer after turning it on."
+msgstr ""
+
+#. translators: %s: mailer name.
+#: admin/views/settings.php:266
+#, php-format
+msgid "%s: read permission granted."
+msgstr ""
+
+#. translators: %s: mailer name.
+#: admin/views/settings.php:272
+#, php-format
+msgid "%s: connected without read permission. Disconnect and connect again once this is switched on."
+msgstr ""
+
+#: admin/views/settings.php:283
+#: includes/providers/class-dsmtp-provider-brevo.php:43
+#: includes/providers/class-dsmtp-provider-mailgun.php:41
+#: includes/providers/class-dsmtp-provider-postmark.php:43
+#: includes/providers/class-dsmtp-provider-resend.php:43
+#: includes/providers/class-dsmtp-provider-sendgrid.php:43
+msgid "Sending services"
+msgstr ""
+
+#: admin/views/settings.php:285
+msgid "SendGrid, Mailgun, Brevo, Postmark and Resend can post delivery, bounce and complaint events to your site. Add the matching address below as a webhook in that service, for bounce, dropped, spam complaint and (optionally) delivered events. The long secret in the address is what proves the call came from your service; keep it to yourself."
+msgstr ""
+
+#: admin/views/settings.php:295
+msgid "Create a new secret"
+msgstr ""
+
+#: admin/views/settings.php:296
+msgid "Every address above changes, so update the services afterwards."
+msgstr ""
+
+#: admin/views/settings.php:306
+msgid "Tick a message to stop WordPress sending it. Everything is left on until you change it here."
+msgstr ""
+
+#: admin/views/settings.php:316
+msgid "Do not send this message"
+msgstr ""
+
+#: admin/views/settings.php:333
+msgid "Debug output"
+msgstr ""
+
+#: admin/views/settings.php:335
+msgid "Record the SMTP conversation for every message"
+msgstr ""
+
+#: admin/views/settings.php:336
+msgid "The test email tool always shows this conversation, so you rarely need to turn it on here."
+msgstr ""
+
+#: admin/views/settings.php:340
+msgid "On uninstall"
+msgstr ""
+
+#: admin/views/settings.php:342
+msgid "Delete the settings, the stored tokens and the email log when the plugin is deleted"
+msgstr ""
+
+#: admin/views/settings.php:348
+msgid "Keeping credentials out of the database"
+msgstr ""
+
+#: admin/views/settings.php:349
+msgid "Every setting can be pinned in wp-config.php instead. A pinned value takes priority and cannot be edited in the dashboard. Passwords, keys and secrets stored here are encrypted with your site salts."
+msgstr ""
+
+#: admin/views/settings.php:357
+msgid "The pattern is DSMTP_ followed by the mailer name and the setting name, both in capitals."
+msgstr ""
+
+#: admin/views/suppression.php:32
+msgid "Spam complaint"
+msgstr ""
+
+#: admin/views/suppression.php:33
+msgid "Added by hand"
+msgstr ""
+
+#: admin/views/suppression.php:41
+msgid "Addresses on this list are never emailed. A message addressed only to them is recorded as blocked; a message with other recipients goes out without them. Hard bounces and spam complaints reported by your mailer land here automatically."
+msgstr ""
+
+#: admin/views/suppression.php:46
+msgid "Bounced addresses"
+msgstr ""
+
+#: admin/views/suppression.php:50
+msgid "Spam complaints"
+msgstr ""
+
+#: admin/views/suppression.php:54
+msgid "Messages blocked in the last 7 days"
+msgstr ""
+
+#: admin/views/suppression.php:59
+msgid "Add an address"
+msgstr ""
+
+#: admin/views/suppression.php:64
+msgid "Email address"
+msgstr ""
+
+#: admin/views/suppression.php:66
+msgid "Note"
+msgstr ""
+
+#: admin/views/suppression.php:67
+msgid "Why (optional)"
+msgstr ""
+
+#: admin/views/suppression.php:68
+msgid "Add to the list"
+msgstr ""
+
+#: admin/views/suppression.php:75
+msgid "Search the list"
+msgstr ""
+
+#: admin/views/suppression.php:78
+msgid "Any reason"
+msgstr ""
+
+#: admin/views/suppression.php:93
+msgid "Remove selected"
+msgstr ""
+
+#: admin/views/suppression.php:120
+msgid "Address"
+msgstr ""
+
+#: admin/views/suppression.php:121
+msgid "Reason"
+msgstr ""
+
+#: admin/views/suppression.php:122
+msgid "Detail"
+msgstr ""
+
+#: admin/views/suppression.php:123
+msgid "Reported by"
+msgstr ""
+
+#: admin/views/suppression.php:124
+msgid "Added"
+msgstr ""
+
+#: admin/views/suppression.php:129
+msgid "The list is empty. That is a good sign."
+msgstr ""
+
+#: admin/views/tools.php:36
+msgid "Send to"
+msgstr ""
+
+#. translators: %s: mailer name.
+#: admin/views/tools.php:43
+#, php-format
+msgid "The message goes out through %s, exactly as a real one would."
+msgstr ""
+
+#: admin/views/tools.php:51
+msgid "Format"
+msgstr ""
+
+#: admin/views/tools.php:52
+msgid "Send as HTML"
+msgstr ""
+
+#: admin/views/tools.php:56
+msgid "Send test email"
+msgstr ""
+
+#: admin/views/tools.php:64
+msgid "The test message was accepted for delivery."
+msgstr ""
+
+#: admin/views/tools.php:66
+msgid "The test message could not be sent."
+msgstr ""
+
+#: admin/views/tools.php:74
+msgid "If it does not arrive, check the spam folder and then your domain records below."
+msgstr ""
+
+#: admin/views/tools.php:79
+msgid "Show the conversation with the mail server"
+msgstr ""
+
+#: admin/views/tools.php:96
+msgid "Bounce reports"
+msgstr ""
+
+#: admin/views/tools.php:97
+msgid "The connected mailbox is checked for delivery reports every fifteen minutes. Check it now to see the result straight away."
+msgstr ""
+
+#: admin/views/tools.php:98
+msgid "Check for bounce reports now"
+msgstr ""
+
+#: admin/views/tools.php:101
+msgid "Domain records"
+msgstr ""
+
+#: admin/views/tools.php:102
+msgid "Inboxes decide whether to trust your mail by looking up three records for your sending domain. Missing records are the usual reason a correctly configured mailer still lands in spam."
+msgstr ""
+
+#: admin/views/tools.php:108
+msgid "Check my domain"
+msgstr ""
+
+#: admin/views/tools.php:121
+msgid "Domain"
+msgstr ""
+
+#: admin/views/tools.php:128
+#: admin/views/tools.php:179
+msgid "Missing"
+msgstr ""
+
+#: admin/views/tools.php:129
+msgid "No SPF record was found. Add one that lists whoever sends mail for this domain."
+msgstr ""
+
+#: admin/views/tools.php:132
+#: admin/views/tools.php:166
+#: admin/views/tools.php:182
+msgid "Found"
+msgstr ""
+
+#: admin/views/tools.php:132
+msgid "Check this"
+msgstr ""
+
+#. translators: %s: SPF include value, for example spf.protection.outlook.com.
+#: admin/views/tools.php:140
+#, php-format
+msgid "This mailer normally needs include:%s in the record."
+msgstr ""
+
+#: admin/views/tools.php:153
+msgid "This mailer does not use a predictable DKIM selector, so nothing was looked up. Follow your provider instructions and confirm signing in their dashboard."
+msgstr ""
+
+#: admin/views/tools.php:155
+msgid "Not found"
+msgstr ""
+
+#. translators: %s: comma separated list of DKIM selectors.
+#: admin/views/tools.php:160
+#, php-format
+msgid "Nothing answered for the usual selectors (%s). Turn DKIM signing on in your mail provider and publish the records they give you."
+msgstr ""
+
+#: admin/views/tools.php:180
+msgid "Add a DMARC record at _dmarc on your domain. Start with v=DMARC1; p=none and tighten it once you know all your mail passes."
+msgstr ""
+
+#: admin/views/tools.php:191
+msgid "No MX records. That only matters if you also receive mail at this domain."
+msgstr ""
+
+#: admin/views/tools.php:208
+msgid "Import from another plugin"
+msgstr ""
+
+#: admin/views/tools.php:209
+msgid "Settings from these plugins were found on this site. Importing copies the from address and the SMTP connection over. Passwords come across only when the other plugin stored them in a readable form."
+msgstr ""
+
+#: admin/views/tools.php:219
+msgid "Import settings"
+msgstr ""
+
+#: admin/views/tools.php:224
+msgid "Diagnostics"
+msgstr ""
+
+#: admin/views/tools.php:239
+msgid "Selected mailer"
+msgstr ""
+
+#: admin/views/tools.php:240
+msgid "not set"
+msgstr ""
+
+#: admin/views/tools.php:241
+msgid "PHP version"
+msgstr ""
+
+#: admin/views/tools.php:242
+msgid "WordPress version"
+msgstr ""
+
+#: admin/views/tools.php:243
+msgid "OpenSSL"
+msgstr ""
+
+#: admin/views/tools.php:243
+#: admin/views/tools.php:244
+msgid "available"
+msgstr ""
+
+#: admin/views/tools.php:243
+msgid "missing, TLS connections will fail"
+msgstr ""
+
+#: admin/views/tools.php:244
+msgid "cURL"
+msgstr ""
+
+#: admin/views/tools.php:244
+msgid "missing"
+msgstr ""
+
+#: admin/views/tools.php:245
+msgid "DNS lookups"
+msgstr ""
+
+#: admin/views/tools.php:245
+msgid "PHP resolver"
+msgstr ""
+
+#: admin/views/tools.php:245
+msgid "over HTTPS"
+msgstr ""
+
+#: admin/views/tools.php:246
+msgid "Encryption at rest"
+msgstr ""
+
+#: admin/views/tools.php:246
+msgid "on"
+msgstr ""
+
+#: admin/views/tools.php:246
+msgid "not available on this host"
+msgstr ""
+
+#: admin/views/tools.php:247
+msgid "wp_mail defined in"
+msgstr ""
+
+#: admin/views/tools.php:247
+#: includes/class-dsmtp-alerts.php:64
+msgid "unknown"
+msgstr ""
+
+#: admin/views/tools.php:248
+msgid "WP Cron"
+msgstr ""
+
+#: admin/views/tools.php:248
+msgid "disabled, retries need a real cron job"
+msgstr ""
+
+#: admin/views/tools.php:248
+msgid "running"
+msgstr ""
+
+#: admin/views/tools.php:249
+msgid "Next retry run"
+msgstr ""
+
+#: admin/views/tools.php:249
+msgid "not scheduled"
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-dsmtp-alerts.php:46
+#, php-format
+msgid "A recipient marked mail from %s as spam"
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-dsmtp-alerts.php:51
+#, php-format
+msgid "An email from %s bounced"
+msgstr ""
+
+#. translators: %s: recipient address.
+#: includes/class-dsmtp-alerts.php:58
+#, php-format
+msgid "Recipient: %s"
+msgstr ""
+
+#. translators: %s: subject line.
+#. translators: %s: subject line of the failed message.
+#: includes/class-dsmtp-alerts.php:63
+#: includes/class-dsmtp-alerts.php:146
+#, php-format
+msgid "Subject: %s"
+msgstr ""
+
+#. translators: %s: provider explanation.
+#. translators: %s: error message.
+#: includes/class-dsmtp-alerts.php:68
+#: includes/class-dsmtp-alerts.php:157
+#, php-format
+msgid "Reason: %s"
+msgstr ""
+
+#: includes/class-dsmtp-alerts.php:72
+msgid "If suppression is on, the address will not be emailed again."
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-dsmtp-alerts.php:130
+#, php-format
+msgid "Email is failing on %s"
+msgstr ""
+
+#: includes/class-dsmtp-alerts.php:137
+msgid "WordPress could not send an email."
+msgstr ""
+
+#. translators: %s: mailer name.
+#: includes/class-dsmtp-alerts.php:141
+#: includes/class-dsmtp-alerts.php:260
+#: includes/class-dsmtp-mailer.php:846
+#, php-format
+msgid "Mailer: %s"
+msgstr ""
+
+#. translators: %s: recipient.
+#: includes/class-dsmtp-alerts.php:151
+#, php-format
+msgid "To: %s"
+msgstr ""
+
+#. translators: %s: admin URL.
+#: includes/class-dsmtp-alerts.php:163
+#, php-format
+msgid "Email log: %s"
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-dsmtp-alerts.php:244
+#, php-format
+msgid "Email summary for %s, the last seven days."
+msgstr ""
+
+#. translators: %d: number of messages.
+#: includes/class-dsmtp-alerts.php:250
+#, php-format
+msgid "Delivered: %d"
+msgstr ""
+
+#. translators: %d: number of messages.
+#: includes/class-dsmtp-alerts.php:255
+#, php-format
+msgid "Failed: %d"
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-dsmtp-alerts.php:272
+#, php-format
+msgid "Weekly email summary for %s"
+msgstr ""
+
+#: includes/class-dsmtp-bounces.php:88
+msgid "That mailer does not expose a mailbox to read."
+msgstr ""
+
+#: includes/class-dsmtp-bounces.php:92
+msgid "The connection does not include permission to read the mailbox. Reconnect the mailer after turning bounce reading on."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/class-dsmtp-bounces.php:234
+#, php-format
+msgid "Microsoft refused the mailbox listing (HTTP %d). Check that the connection has permission to read mail."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/class-dsmtp-bounces.php:302
+#, php-format
+msgid "Google refused the mailbox listing (HTTP %d). Check that the connection has permission to read mail."
+msgstr ""
+
+#. translators: 1: primary error, 2: backup mailer name, 3: backup error.
+#: includes/class-dsmtp-catcher.php:93
+#, php-format
+msgid "%1$s The backup mailer %2$s also failed: %3$s"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:31
+msgid "New user, message to the site administrator"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:32
+msgid "Sent every time somebody registers."
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:35
+msgid "New user, welcome message to the user"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:36
+msgid "Contains the password set link, so most sites should leave this on."
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:39
+msgid "Password reset link"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:40
+msgid "Turning this off means nobody can reset a forgotten password by email."
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:43
+msgid "Password was changed, message to the user"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:47
+msgid "Password was changed, message to the site administrator"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:51
+msgid "Email address was changed, message to the user"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:55
+msgid "Comment is waiting for moderation"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:59
+msgid "Comment was published"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:63
+msgid "Automatic WordPress update results"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:67
+msgid "Automatic plugin and theme update results"
+msgstr ""
+
+#: includes/class-dsmtp-controls.php:71
+msgid "Automatic update debugging messages"
+msgstr ""
+
+#: includes/class-dsmtp-cron.php:80
+msgid "Every five minutes (Demfilz SMTP Mailer)"
+msgstr ""
+
+#: includes/class-dsmtp-cron.php:87
+msgid "Every fifteen minutes (Demfilz SMTP Mailer)"
+msgstr ""
+
+#: includes/class-dsmtp-dns.php:72
+msgid "Set a from address first, then run the check."
+msgstr ""
+
+#: includes/class-dsmtp-events.php:507
+msgid "No detail supplied by the provider."
+msgstr ""
+
+#. translators: %s: provider explanation.
+#: includes/class-dsmtp-events.php:523
+#, php-format
+msgid "Temporary delivery problem reported: %s"
+msgstr ""
+
+#. translators: %s: provider explanation.
+#: includes/class-dsmtp-events.php:537
+#, php-format
+msgid "Marked as spam by the recipient: %s"
+msgstr ""
+
+#. translators: %s: provider explanation.
+#: includes/class-dsmtp-events.php:542
+#, php-format
+msgid "Bounced: %s"
+msgstr ""
+
+#: includes/class-dsmtp-import.php:24
+msgid "WP Mail SMTP"
+msgstr ""
+
+#: includes/class-dsmtp-import.php:25
+msgid "Easy WP SMTP"
+msgstr ""
+
+#: includes/class-dsmtp-import.php:26
+msgid "Post SMTP"
+msgstr ""
+
+#: includes/class-dsmtp-import.php:79
+msgid "No settings were found for that plugin."
+msgstr ""
+
+#: includes/class-dsmtp-import.php:93
+msgid "That plugin is not supported."
+msgstr ""
+
+#. translators: %s: comma separated addresses.
+#: includes/class-dsmtp-mailer.php:158
+#, php-format
+msgid "Not sent: every recipient is on the suppression list (%s)."
+msgstr ""
+
+#. translators: %s: error reported by the primary mailer.
+#: includes/class-dsmtp-mailer.php:434
+#, php-format
+msgid "Sent by the backup mailer after the first attempt failed: %s"
+msgstr ""
+
+#. translators: %s: comma separated addresses.
+#: includes/class-dsmtp-mailer.php:602
+#, php-format
+msgid "Suppressed recipients were left out: %s"
+msgstr ""
+
+#: includes/class-dsmtp-mailer.php:750
+msgid "That log entry no longer exists."
+msgstr ""
+
+#: includes/class-dsmtp-mailer.php:756
+msgid "This entry was logged without enough detail to send it again."
+msgstr ""
+
+#: includes/class-dsmtp-mailer.php:772
+msgid "The message failed again. The log entry has the reason."
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/class-dsmtp-mailer.php:811
+#, php-format
+msgid "Test email from %s"
+msgstr ""
+
+#: includes/class-dsmtp-mailer.php:843
+msgid "This is a test message from the Demfilz SMTP Mailer plugin."
+msgstr ""
+
+#. translators: %s: site address.
+#: includes/class-dsmtp-mailer.php:851
+#, php-format
+msgid "Sent from: %s"
+msgstr ""
+
+#. translators: %s: date and time.
+#: includes/class-dsmtp-mailer.php:856
+#, php-format
+msgid "Sent at: %s"
+msgstr ""
+
+#: includes/class-dsmtp-mailer.php:871
+msgid "If you can read this, HTML email is working too."
+msgstr ""
+
+#: includes/class-dsmtp-oauth.php:89
+#: includes/class-dsmtp-oauth.php:232
+#: includes/class-dsmtp-oauth.php:291
+msgid "That mailer does not use OAuth."
+msgstr ""
+
+#: includes/class-dsmtp-oauth.php:95
+msgid "Add the application id and secret first, then save, then connect."
+msgstr ""
+
+#: includes/class-dsmtp-oauth.php:256
+msgid "The mail provider did not return a refresh token. Check that offline access was requested and try again."
+msgstr ""
+
+#. translators: %s: mailer name.
+#: includes/class-dsmtp-oauth.php:310
+#, php-format
+msgid "%s is not connected yet. Open the plugin settings and press Connect."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/class-dsmtp-oauth.php:420
+#, php-format
+msgid "The token request failed with HTTP %d."
+msgstr ""
+
+#: includes/class-dsmtp-privacy.php:137
+msgid "This site keeps a log of the emails it sends, which can include the recipient address, the subject line and, if enabled, the message body. Entries are deleted automatically after the retention period set in the mail settings."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-brevo.php:34
+msgid "Brevo"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-brevo.php:52
+msgid "Formerly Sendinblue. A generous free tier for transactional email."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-brevo.php:61
+msgid "Create an API key under SMTP and API in your Brevo account, and add your sending domain there so it is authenticated."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-brevo.php:72
+#: includes/providers/class-dsmtp-provider-mailgun.php:70
+#: includes/providers/class-dsmtp-provider-resend.php:72
+#: includes/providers/class-dsmtp-provider-sendgrid.php:72
+msgid "API key"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-brevo.php:132
+#: includes/providers/class-dsmtp-provider-mailgun.php:130
+#: includes/providers/class-dsmtp-provider-postmark.php:109
+#: includes/providers/class-dsmtp-provider-resend.php:123
+#: includes/providers/class-dsmtp-provider-sendgrid.php:125
+msgid "The message has no recipients."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:34
+msgid "Google Workspace and Gmail"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:43
+msgid "Google"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:52
+msgid "Sends through the Gmail API with OAuth, which avoids application passwords and the daily limits of the Gmail SMTP relay."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:61
+msgid "In the Google Cloud console create a project, enable the Gmail API, configure the consent screen, then create an OAuth client id of type Web application with the redirect URI below. Paste the client id and secret here, save, and press Connect."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:72
+msgid "Client id"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:77
+msgid "Client secret"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:83
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:99
+msgid "Mailbox address"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:85
+msgid "Filled in for you when you connect."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-gmail.php:169
+msgid "Press Connect to sign in to the Google account."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:32
+msgid "Mailgun"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:50
+msgid "Good deliverability and detailed logs. Needs a verified sending domain."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:59
+msgid "Copy a sending API key from the Mailgun dashboard and enter the domain you verified there. Pick the European region if your Mailgun account was created in the EU."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:76
+msgid "Sending domain"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:82
+msgid "Region"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:86
+msgid "United States"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:87
+msgid "Europe"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:91
+msgid "Webhook signing key"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-mailgun.php:94
+msgid "Optional. From Webhooks in the Mailgun dashboard. When set, delivery events are also checked against this signature, not just the secret in the webhook address."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:36
+msgid "Microsoft 365 SMTP (modern authentication)"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:45
+#: includes/providers/class-dsmtp-provider-microsoft.php:48
+msgid "Microsoft"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:63
+msgid "SMTP to smtp.office365.com, signed in with OAuth instead of a password. Needs SMTP AUTH enabled on the mailbox."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:72
+msgid "Register an application in the Microsoft Entra admin centre, add the redirect URI below as a Web platform, grant the delegated permission SMTP.Send, create a client secret, then save and press Connect. SMTP AUTH must be enabled for the mailbox in the Microsoft 365 admin centre."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:83
+#: includes/providers/class-dsmtp-provider-microsoft.php:96
+msgid "Directory (tenant) id"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:88
+#: includes/providers/class-dsmtp-provider-microsoft.php:103
+msgid "Application (client) id"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:93
+#: includes/providers/class-dsmtp-provider-microsoft.php:108
+msgid "Client secret value"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:102
+msgid "The mailbox the site signs in as, for example notifications@example.com."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:105
+#: includes/providers/class-dsmtp-provider-smtp.php:79
+msgid "SMTP host"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:110
+#: includes/providers/class-dsmtp-provider-smtp.php:95
+msgid "SMTP port"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft-smtp.php:162
+#: includes/providers/class-dsmtp-provider-microsoft.php:272
+msgid "Press Connect to sign in to the Microsoft mailbox."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:39
+msgid "Microsoft 365 and Outlook (Graph API)"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:66
+msgid "Recommended for Microsoft 365, Exchange Online, Outlook.com and Hotmail mailboxes. Uses modern authentication, so it keeps working after basic authentication and SMTP AUTH are switched off."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:75
+msgid "Register an application in the Microsoft Entra admin centre (Azure Active Directory), add the redirect URI shown below as a Web platform, create a client secret, then come back, save, and press Connect."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:86
+msgid "Sign in method"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:90
+msgid "Sign in to one mailbox (delegated permissions)"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:91
+msgid "Application permissions, no sign in (client credentials)"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:93
+msgid "Signing in suits a single mailbox and takes two minutes. Application permissions need an administrator to consent once, never expire until the secret does, and can send from any mailbox in the tenant. Pair them with an application access policy so the site can only send from the mailbox you intend."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:100
+msgid "Copy it from the application overview page. Leave it as common only for personal Outlook.com accounts."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:112
+msgid "The secret Value, not the Secret ID. Stored encrypted. Note the expiry date Microsoft gives it, because mail stops when it lapses."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:115
+msgid "Send from mailbox"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:117
+msgid "Required for application permissions. With a signed in mailbox this is filled in for you when you connect."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:120
+msgid "Keep a copy in Sent Items"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:123
+msgid "Off keeps the mailbox tidy when the site sends a lot of notifications. On files every message in Sent Items."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:261
+msgid "Application permissions need your real directory (tenant) id, not common."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:265
+msgid "Enter the mailbox this site should send from."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-microsoft.php:355
+msgid "Microsoft accepts messages up to 4 MB through this route. Send the file as a link instead."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-php.php:35
+msgid "Default (PHP mail)"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-php.php:44
+#: includes/providers/class-dsmtp-provider-smtp.php:41
+msgid "Built in"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-php.php:62
+msgid "Hands the message to the web server. Cheap, but most hosts and inboxes treat it as unauthenticated mail."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-php.php:71
+msgid "Nothing to configure. Mail goes out through the PHP mail function, which is what WordPress does with no mail plugin installed. Pick any other mailer below to authenticate properly and stop landing in spam folders."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-postmark.php:34
+msgid "Postmark"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-postmark.php:52
+msgid "Built for transactional mail, with fast delivery and clear bounce reporting."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-postmark.php:61
+msgid "Copy the Server API token from your Postmark server, and confirm the sender signature or domain for the from address you use."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-postmark.php:72
+msgid "Server API token"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-postmark.php:78
+msgid "Message stream"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-postmark.php:81
+msgid "Leave as outbound unless you created a different stream in Postmark."
+msgstr ""
+
+#. translators: 1: error code, 2: error message.
+#: includes/providers/class-dsmtp-provider-postmark.php:192
+#, php-format
+msgid "Postmark rejected the message (code %1$d): %2$s"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-resend.php:34
+msgid "Resend"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-resend.php:52
+msgid "A simple modern sending API. Add and verify your domain in Resend first."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-resend.php:61
+msgid "Create an API key with sending access in the Resend dashboard, and verify the domain your from address belongs to."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-sendgrid.php:34
+msgid "SendGrid"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-sendgrid.php:52
+msgid "A sending service with a free tier. Verify your sending domain in SendGrid first."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-sendgrid.php:61
+msgid "Create an API key with the Mail Send permission in the SendGrid dashboard, then authenticate the domain your from address uses."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:32
+msgid "Other SMTP"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:59
+msgid "Any mail server that speaks SMTP: your host, your mailbox provider, or a sending service that gives you SMTP credentials."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:68
+msgid "Use the host, port and credentials your mail provider gave you. Port 587 with TLS suits almost every server. Port 465 needs SSL. If your provider has switched off password sign in, use one of the dedicated mailers instead."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:85
+msgid "Encryption"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:89
+msgid "None"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:90
+msgid "STARTTLS (usually port 587)"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:91
+msgid "SSL (usually port 465)"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:101
+msgid "Use authentication"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:104
+msgid "Almost always on. Turn it off only for a local relay that accepts mail without a login."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:107
+msgid "User name"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:112
+msgid "Password"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:116
+msgid "Stored encrypted. It can also live in wp-config.php, see the Advanced tab."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:119
+msgid "Upgrade to TLS automatically"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:122
+msgid "Encrypt the connection when the server offers it, even if Encryption is set to None."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider-smtp.php:140
+msgid "SMTP authentication is on, so a user name and password are needed."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider.php:59
+msgid "Other services"
+msgstr ""
+
+#. translators: 1: mailer name, 2: comma separated list of setting names.
+#: includes/providers/class-dsmtp-provider.php:155
+#, php-format
+msgid "%1$s is not set up yet. Still needed: %2$s."
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider.php:180
+msgid "This mailer cannot send messages."
+msgstr ""
+
+#. translators: 1: mailer name, 2: error message.
+#: includes/providers/class-dsmtp-provider.php:246
+#, php-format
+msgid "Could not reach %1$s: %2$s"
+msgstr ""
+
+#. translators: 1: mailer name, 2: HTTP status code, 3: response body.
+#: includes/providers/class-dsmtp-provider.php:260
+#, php-format
+msgid "%1$s rejected the message (HTTP %2$d): %3$s"
+msgstr ""
+
+#: includes/providers/class-dsmtp-provider.php:285
+msgid "no details returned"
+msgstr ""
+
+#. translators: %s: file path.
+#: includes/providers/class-dsmtp-provider.php:345
+#, php-format
+msgid "Could not read the attachment %s."
+msgstr ""
